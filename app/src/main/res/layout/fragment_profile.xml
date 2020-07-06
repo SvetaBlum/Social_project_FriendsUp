@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/coverIv"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#59BEA3FB"
+                android:scaleType="fitXY"
+                android:contentDescription="TODO">
+            </ImageView>
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="100dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatarIv"
+                    android:src="@drawable/ic_face"
+                    android:layout_marginStart="20dp"
+                    android:background="#0CA8A0B3"
+                    android:padding="5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:contentDescription="TODO" />
+
+                <LinearLayout
+                    android:id="@+id/your_linear_layout_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:background="#9EE3E1E4"
+                    tools:ignore="InvalidId">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/caveat_brush"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/nameTv"/>
+
+                    <TextView
+                        android:id="@+id/emailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/caveat_brush"
+                        android:textColor="@color/colorPrimaryDark" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/caveat_brush"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/phoneTv"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_posts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_pen" />
+
+</RelativeLayout>

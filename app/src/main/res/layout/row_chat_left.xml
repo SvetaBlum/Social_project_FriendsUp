@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/messageLayout"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_face"
+            app:civ_border_color="@null"
+            />
+
+        <TextView
+            android:id="@+id/messagTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:fontFamily="@font/caveat_brush"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:background="@drawable/circular_hired"
+            android:text="His message" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeTv"
+            android:textSize="10sp"
+            android:fontFamily="@font/caveat_brush"
+            android:textColor="@color/colorPrimary"
+            android:text="21/06/20 15:35 AM"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/isSeenTv"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:visibility="gone"
+        android:text="delivered"
+
+        />
+
+
+</LinearLayout>

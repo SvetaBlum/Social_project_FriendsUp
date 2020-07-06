@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:src="@drawable/ic_face"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            />
+
+        <ImageView
+            android:id="@+id/onlineStatusIv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="His name"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/caveat_brush"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_toEndOf="@+id/profileIv"
+            android:layout_toRightOf="@+id/profileIv"
+            android:layout_marginLeft="4dp" />
+
+
+        <TextView
+            android:id="@+id/lastMessageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The last message"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:maxLines="2"
+            android:layout_toEndOf="@+id/profileIv"
+            android:layout_toRightOf="@+id/profileIv"
+            android:layout_below="@+id/nameTv"
+            android:layout_marginLeft="4dp" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

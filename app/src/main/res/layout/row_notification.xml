@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    app:cardUseCompatPadding= "true"
+    app:cardCornerRadius="2dp"
+    app:cardElevation = "2dp"
+    app:contentPadding ="3dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_face"
+            />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:id="@+id/nameTv"
+                android:textStyle="bold"
+                android:fontFamily="@font/caveat_brush"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:id="@+id/notificationTv"
+                android:fontFamily="@font/caveat_brush"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:id="@+id/timeTv"
+                android:fontFamily="@font/caveat_brush"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
