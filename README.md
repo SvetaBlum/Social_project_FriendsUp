@@ -1,5 +1,5 @@
 # Social_project_FriendsUp
-<h3>Social Firebase Application include Home, Profile, Users and Notifications Fragments and 
+<h3>Social Firebase Application include Home, Profile, Users and Notifications Fragments. In addition, 
 Chat,Post,Register Activities.</h3>
 <h3>Using External APIs, Fonts, Splash Screen with Animation. </h3>
 
